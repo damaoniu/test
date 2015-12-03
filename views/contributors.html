@@ -1,0 +1,9 @@
+contibutors for {{repo}}
+<a href="#/">Back to repos</a>
+<ul>
+    <li ng-repeat="contributor in contributors">
+        <img ng-src="{{contributor.avatar_url}}"  height="100" width="100">
+        <br/>
+        <h3>{{contributor.login}}</h3>
+    </li>
+</ul>

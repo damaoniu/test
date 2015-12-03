@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Test Joe</title>
+    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <!-- style -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- build:css ../assets/styles/app.min.css -->
+    <link rel="stylesheet" href="style/app.css" type="text/css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" type="text/css" />
+    <!--<base href="/">-->
+
+</head>
+<body ng-app="app" ng-controller="AppCtrl as ac">
+<div class="container" ui-view></div>
+<!-- build:js scripts/app.angular.js -->
+<!-- jQuery -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- Angular -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<!-- router -->
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+<!--&lt;!&ndash; Angular strap &ndash;&gt;-->
+<!--<script src="../libs/angular/angular-strap/dist/angular-strap.js"></script>-->
+<!--<script src="../libs/angular/angular-strap/dist/angular-strap.tpl.js"></script>-->
+
+<!-- App -->
+<script src="app.js"></script>
+<script src="lib/repo.service.js"></script>
+<script src="lib/app.ctrl.js"></script>
+<script src="lib/contributors.ctr.js"></script>
+<script src="lib/config.router.js"></script>
+
+</body>
+</html>

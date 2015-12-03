@@ -1,0 +1,9 @@
+{
+  "name": "test",
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -o"
+  },
+  "devDependencies": {
+    "http-server": "^0.6.1"
+  }
+}

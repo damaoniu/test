@@ -1,0 +1,23 @@
+
+    <h3>Repos</h3>
+    <div class="table-responsive">
+        sort by user<input type="text" class="form-control" ng-model="userName">
+        <table class="table-striped">
+            <thead>
+                <th ng-click="sortBy('created')">Created <i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i></th>
+                <th ng-click="sortBy('updated')">updated <i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i></th>
+                <th ng-click="sortBy('pushed')">Pushed <i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i></th>
+                <th ng-click="sortBy('full_name')">Full Name <i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i></th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="repo in repos|filter:userName">
+                    <td>{{repo.created_at|date :'mediumDate'}}</td>
+                    <td>{{repo.updated_at|date :'mediumDate'}}</td>
+                    <td>{{repo.pushed_at|date :'mediumDate'}}</td>
+                    <td><a href="#/contributors/{{repo.owner.login}}/{{repo.name}}">{{repo.full_name}}</a></td>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
